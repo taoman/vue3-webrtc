@@ -14,7 +14,7 @@
 
   const remoteVideo = ref();
   const localVideo = ref();
-  const socket = new WebSocket("ws://localhost:8080");
+  const socket = new WebSocket("ws://localhost:5173");
   const peer = new RTCPeerConnection();
   const init = () => {
     socket.onmessage = (e) => {
@@ -68,6 +68,7 @@
         peer.addIceCandidate(iceCandidate);
       }
     };
+    console.log('开始了')
   };
   const endCall = () => {
     if (localVideo.value.srcObject) {
