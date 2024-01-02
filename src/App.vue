@@ -10,11 +10,11 @@
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" /> -->
-  <VideoVoice />
+  <RouterView />
 </template>
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
-import VideoVoice from './components/VideoVoice.vue';
+
 </script>
 <style scoped>
 .logo {
